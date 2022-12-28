@@ -1,0 +1,14 @@
+% Source: tug.ctan.org/info/latex-samples/TitlePages/titlepages.pdf
+
+\newlength{\drop}
+\newcommand*{\customtitle}{
+    \begingroup
+        \drop = 0.13\textheight
+        \centering
+        \vspace*{\drop}
+    {\Huge A LONG}\\[\baselineskip]
+    {\Huge TITLE}\\[\baselineskip]
+    {\LARGE\itshape A Summary}\\[3\baselineskip]
+    {\Large \textit{Written by} \textsc{Author}}\par
+    \vspace*{\drop}
+    \endgroup}
