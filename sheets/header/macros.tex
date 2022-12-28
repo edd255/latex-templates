@@ -1,0 +1,188 @@
+%--- Math macros ---------------------------------------------------------------
+% Differentials
+\newcommand{\dif}{\mathop{}\!\mathrm{d}}
+\newcommand{\diff}[1]{\frac{\mathrm{d}}{\mathrm{d}#1}}
+
+% Imaginary part
+\newcommand{\im}{\mathop{}\!\mathrm{Im}\,}
+
+% Real part
+\newcommand{\re}{\mathop{}\!\mathrm{Re}\,}
+
+% Inverse
+\newcommand{\inv}{^{-1}}
+
+% Vertically centered colon
+\newcommand{\vcol}{\vcentcolon}
+
+% arg max
+\newcommand{\argmax}[1]{\underset{#1}{\mathrm{arg\hspace{0.2em}max}}\hspace{0.2em}}
+
+% arg min
+\newcommand{\argmin}[1]{\underset{#1}{\mathrm{arg\hspace{0.2em}min}}\hspace{0.2em}}
+
+% Content-dependend round brackets
+\newcommand{\rbrk}[1]{\left(#1\right)}
+
+% Content-dependend square brackets
+\newcommand{\sbrk}[1]{\left[#1\right]}
+
+% Content-dependend curly brackets
+\newcommand{\cbrk}[1]{\left\{#1\right\}}
+
+% Content-dependend angle brackets
+\newcommand{\abrk}[1]{\langle#1\rangle}
+
+% Content-dependend vertical lines
+\newcommand{\abs}[1]{\left|#1\right|}
+
+% Content-dependend rounddown
+\newcommand{\rounddown}[1]{\left\lfloor #1 \right\rfloor}
+
+% Content-dependend roundup
+\newcommand{\roundup}[1]{\left\lceil #1 \right\rceil}
+
+% Degree sign
+\newcommand{\dgr}{^{\circ}}
+
+% Conditional equivalence
+\newcommand{\mustbe}{\overset{!}{=}}
+
+% Case distinction
+\newcommand{\case}{\text{ if }}
+
+% Equivalence
+\newcommand{\equivalence}{\Leftrightarrow}
+
+% Modular arithmetics
+\renewcommand{\mod}{\text{ mod }}
+
+% Integer division
+\renewcommand{\div}{\text{ div }}
+
+% Reset equation counter
+\newcommand{\resetcount}{\setcounter{equation}{0}}
+
+% Proof end
+\newcommand{\QED}{\hfill$\blacksquare$}
+
+% Theorems
+\newtheorem{theorem}{Theorem}[section]
+
+% Corollaries
+\newtheorem{corollary}{Corollary}[theorem]
+
+% Lemma
+\newtheorem{lemma}[theorem]{Lemma}
+
+% Remarks
+\newtheorem*{remark}{Remark}
+
+% Definition
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[section]
+
+
+%%--- Sets ---------------------------------------------------------------------
+% Natural numbers
+\newcommand{\NN}{\mathbb{N}}
+
+% Integers
+\newcommand{\ZZ}{\mathbb{Z}}
+
+% Rational numbers
+\newcommand{\QQ}{\mathbb{Q}}
+
+% Real numbers
+\newcommand{\RR}{\mathbb{R}}
+
+% Complex numbers
+\newcommand{\CC}{\mathbb{C}}
+
+% Prime numbers
+\newcommand{\PP}{\mathbb{P}}
+
+% Set condition
+\newcommand{\where}{\mid}
+
+
+%%--- Algorithms ---------------------------------------------------------------
+% Big-O notation
+\newcommand{\BigO}[1]{\mathcal{O}\rbrk{#1}}
+
+% FOR-loops
+\newcommand{\FOR}{\textsc{For}}
+
+% WHILE-loops
+\newcommand{\WHILE}{\textsc{While}}
+
+% IF-queries
+\newcommand{\IF}{\textsc{If}}
+
+% Hashtable environment
+\newenvironment{hashtable}[1][]
+  {\begin{tabular}[#1]{
+     @{} 
+     > {\small} r <{\normalsize~\rlap{\fbox{\strut~~}}$~~\longrightarrow$~}
+     @{} l @{}}}
+  {\end{tabular}}
+
+
+%%--- Physics ------------------------------------------------------------------
+% Unit
+\newcommand{\unit}[1]{\,\mathrm{#1}}
+
+% Unit fraction
+\newcommand{\ufrac}[2]{\frac{\!\unit{#1}}{\!\unit{#2}}}
+
+% Meter
+\newcommand{\um}{\unit{m}}
+
+% Second
+\newcommand{\us}{\unit{s}}
+
+% Hour
+\newcommand{\uh}{\unit{h}}
+
+% Coulomb
+\newcommand{\uC}{\unit{C}}
+
+% Ampere
+\newcommand{\uA}{\unit{A}}
+
+% Newton
+\newcommand{\uN}{\unit{N}}
+
+% Kilogram
+\newcommand{\ukg}{\unit{kg}}
+
+% Joule
+\newcommand{\uJ}{\unit{J}}
+
+% Watt
+\newcommand{\uW}{\unit{W}}
+
+
+%%--- Statistics ---------------------------------------------------------------
+% Expectation
+\newcommand{\Exp}[1]{\mathrm{Exp}\rbrk{#1}}
+
+% Probability
+\newcommand{\Prb}[1]{\mathrm{Prb}\rbrk{#1}}
+
+% Covariance
+\newcommand{\Cov}[1]{\mathrm{Cov}\rbrk{#1}}
+
+% Correlation
+\newcommand{\Cor}[1]{\mathrm{Cor}\rbrk{#1}}
+
+% Average
+\newcommand{\Avg}[1]{\mathrm{Avg}\rbrk{#1}}
+
+% Variance
+\newcommand{\Var}[1]{\mathrm{Var}\rbrk{#1}}
+
+
+%%--- Fonts --------------------------------------------------------------------
+% Change of default bold font
+\renewcommand{\bfdefault}{b}
